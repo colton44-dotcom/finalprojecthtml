@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>TaskFlow Task Manager</h1>
+            <p>Organize your tasks by priority, importance, and completion status.</p>
+            
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Enter task name">
+                
+                <select id="taskPriority">
+                    <option value="High">High Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" id="importantCheck">
+                    Important
+                </label>
+
+                <label>
+                    <input type="checkbox" id="completedCheck">
+                    Completed
+                </label>
+
+                <button type="submit">Add Task</button>
+            </form>
+
+            <div id="taskManager"></div>
+        </div>
+
+        <script src="scriptt.js"></script>
+
+    </body>
+</html>

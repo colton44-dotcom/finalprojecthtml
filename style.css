@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #234;
+}
+
+p {
+    text-align: center;
+    color: #567
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input[type="text"] 
+select {
+    flex: 1;
+    padding: 10px;
+    gap: 5px
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.task-card {
+    background: #ffffff;
+    border-left: 6px solid gray;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.task-card h3 {
+    margin: 0 0 8px;
+}
+
+.task-buttons {
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background: #dc2626
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+.complete-btn {
+    background: #15803d;
+}
+
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
